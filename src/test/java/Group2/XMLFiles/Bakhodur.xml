@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"> <!--parallel="tests" thread-count="2"-->
+    <test name="Testing with Chrome">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="email" value="group2@gmail.com"></parameter>
+        <parameter name="name" value="Group2"></parameter>
+        <parameter name="cardNumber" value="4242 4242 4242 4242"></parameter>
+        <parameter name="expDate" value="12/24"></parameter>
+        <parameter name="cvc" value="000"></parameter>
+        <classes>
+            <class name="Group2.US_305_Bakhodur"></class>
+            <class name="Group2.US_306_Bakhodur"></class>
+        </classes>
+    </test>
+
+    <test name="Testing with Edge">
+        <parameter name="browserName" value="edge"></parameter>
+        <classes>
+            <class name="Group2.US_305_Bakhodur"></class>
+            <class name="Group2.US_306_Bakhodur"></class>
+        </classes>
+    </test>
+</suite>
