@@ -45,7 +45,7 @@ public class DriverClass {
 
         driver.get("https://shopdemo.e-junkie.com/");
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         actions = new Actions(driver);
 
 
